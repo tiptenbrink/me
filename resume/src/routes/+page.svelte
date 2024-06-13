@@ -50,66 +50,119 @@
         </header>
 
         <div class="grid grid-cols-[5fr_3fr] gap-6">
-            <section class="">
-                <h2 class="text-md font-semibold uppercase">Education</h2>
-                <hr class="border-2 border-solid border-black" />
-                <ul>
-                    <li>
-                        <div class="flex flex-row justify-between">
-                            <span class="font-bold">TU Delft</span>
-                            <span>Sept 2018-June 2025</span>
-                        </div>
-                        <ul>
-                            <li>
-                                <div>
-                                    MSc Computer Science
-                                    <div
-                                        class="border border-solid border-black p-1 grid grid-cols-[2fr_1fr] text-sm"
-                                    >
-                                        <span
-                                            >During my bachelors, I discovered a
-                                            passion and talent for software,
-                                            which made me switch to Computer
-                                            Science.</span
+            <div>
+                <section class="">
+                    <h2 class="text-md font-semibold uppercase">Education</h2>
+                    <hr class="border-2 border-solid border-black" />
+                    <ul>
+                        <li>
+                            <div class="flex flex-row justify-between">
+                                <span class="font-bold">TU Delft</span>
+                                <span>Sept 2018-June 2025</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div>
+                                        MSc Computer Science
+                                        <div
+                                            class="border border-solid border-black p-1 grid grid-cols-[2fr_1fr] text-sm"
                                         >
-                                        <span>Hi</span>
+                                            <span
+                                                >During my bachelors, I
+                                                discovered a passion and talent
+                                                for software, which made me
+                                                switch to Computer Science.</span
+                                            >
+                                            <span>Hi</span>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li>Bridging Program Computer Science</li>
-                            <li>BSc Applied Physics</li>
-                            <li>BSc Applied Mathematics</li>
-                        </ul>
+                                </li>
+                                <li>Bridging Program Computer Science</li>
+                                <li>BSc Applied Physics</li>
+                                <li>BSc Applied Mathematics</li>
+                            </ul>
+                        </li>
+                        <li class="flex flex-row justify-between gap-4">
+                            <span class="font-bold">Het Baarnsch Lyceum</span
+                            ><span>vwo NT&NG gymnasium: 8.6/10 average</span
+                            ><span>2012-2018</span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="mb-8">
+                    <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+                    <ul>
+
+                    </ul>
+                </section>
+            </div>
+
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold">Experience</h2>
+                <ul>
+                    <li class="text-sm">
+                        <div class="float-left mr-4 text-md">
+                            <div class="font-bold mb-1 mt-1">SimplyMeals</div>
+                            <div class="text-xs">
+                                Software Developer <br />& Co-Founder
+                            </div>
+                            <div class="text-xs italic">2023-present</div>
+                        </div>
+                        <p>
+                            At <a
+                                href="https://simplymeals.nl"
+                                class="text-blue-600"
+                                target="_blank"
+                                rel="noopener noreferrer">SimplyMeals</a
+                            > I was a part-time co-founder and set up their website,
+                            database, registration and payment system from scratch
+                            in a team of 2. We built a full-stack application using
+                            SvelteKit, where I was primarily responsible for the
+                            business logic and backend components. With little time
+                            and money, we had to focus on the commercial and operational
+                            priorities. The system allowed hosts to order group meals,
+                            which the guests could then register and pay for. SimplyMeals
+                            serves nearly 2,000 meals per month.
+                        </p>
+                        <div class="mt-1 text-xs">
+                            Technologies: <em
+                                >TypeScript, Svelte, PostgreSQL, Docker, GitHub
+                                Actions</em
+                            >
+                        </div>
+                    </li>
+                    <li class="text-sm">
+                        <div class="float-left mr-4 text-md">
+                            <div class="font-bold mb-1 mt-1">
+                                D.S.A.V. Dodeka
+                            </div>
+                            <div class="text-xs">
+                                .ComCom Member <br />& Chair (volunteer)
+                            </div>
+                            <div class="text-xs italic">2021-present</div>
+                        </div>
+                        <p>
+                            At D.S.A.V. Dodeka, the 150-member student athletics
+                            association in Delft, I was a member and later chair
+                            of the commission responsible for developing and
+                            maintaining the website. After I joined, I was
+                            primarily responsible for developing a login system
+                            and backend, which we developed in Python. The login
+                            and authorization employs JWTs and was built from
+                            scratch to the OAuth 2.0 specification.
+                        </p>
+                        <div class="mt-1 text-xs">
+                            Technologies: <em
+                                >Python, JavaScript, FastAPI, OAuth 2.0 and
+                                JWTs, PostgreSQL, React, Docker Compose,
+                                encryption</em
+                            >
+                        </div>
                     </li>
                 </ul>
             </section>
 
-            <section class="mb-8">
-                <h2 class="text-2xl font-semibold mb-4">Experience</h2>
-                <ul>
-                    <!-- {#each experience as exp}
-          <li class="mb-4">
-            <p class="text-xl font-medium">{exp.position} at {exp.company}</p>
-            <p class="text-gray-600">{exp.period}</p>
-            <p>{exp.description}</p>
-          </li>
-        {/each} -->
-                </ul>
-            </section>
 
-            <section class="mb-8">
-                <h2 class="text-2xl font-semibold mb-4">Projects</h2>
-                <ul>
-                    <!-- {#each projects as proj}
-          <li class="mb-4">
-            <p class="text-xl font-medium">
-              <a href={proj.link} class="text-blue-500 hover:underline">{proj.name}</a>
-            </p>
-            <p>{proj.description}</p>
-          </li>
-        {/each} -->
-                </ul>
-            </section>
         </div>
 
         <section class="mb-8">
